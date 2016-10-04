@@ -40,7 +40,7 @@ public class AccountSearch {
 		repbean.setRuleId(ruleId);
 		GenerateData genData=new GenerateData();
 
-		try {
+		try 
 			driver = MSBUtils.getDriver();
 			MSBUtils.userLogin(driver, "msbadmin@abc.com", "Msb1234");
             MSBUtils.leftMenu(driver, "//div[@id='accordian_my']/div/h4/a/span", "searchAccountsMenuAdmin");
