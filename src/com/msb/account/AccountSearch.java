@@ -40,7 +40,7 @@ public class AccountSearch {
 		repbean.setRuleId(ruleId);
 		GenerateData genData=new GenerateData();
 
-		try 
+		try {
 			driver = MSBUtils.getDriver();
 			MSBUtils.userLogin(driver, "msbadmin@abc.com", "Msb1234");
             MSBUtils.leftMenu(driver, "//div[@id='accordian_my']/div/h4/a/span", "searchAccountsMenuAdmin");
@@ -52,9 +52,9 @@ public class AccountSearch {
     driver.findElement(By.id("accountSearchButton")).click();
     driver.findElement(By.id("accountName")).clear();
     driver.findElement(By.id("accountName")).sendKeys("interfaceer");
-    driver.findElement(By.id("accountSearchButton")).click();
-    driver.findElement(By.id("accountName")).clear();
-    driver.findElement(By.id("accountName")).sendKeys("i");
+    driver.findElement(By.css("accountSearchButton")).click();
+    driver.findElement(By.css("accountName")).clear();
+    driver.findElement(By.css("accountName")).sendKeys("i");
     driver.findElement(By.id("accountSearchButton")).click();
     new Select(driver.findElement(By.id("accountType"))).selectByVisibleText("Customer");
     driver.findElement(By.id("accountSearchButton")).click();
