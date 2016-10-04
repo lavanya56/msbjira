@@ -32,8 +32,7 @@ public class AccountSearch {
 		String timetoProcess = "";
 		String page = "Search Account";
 		String ruleId = "searchAccount";
-		String userName = "Admin";
-		String password = "";
+		
 		String event_id = "";
 		ReportBean repbean = new ReportBean();
 		Date beging = new Date();
@@ -52,9 +51,9 @@ public class AccountSearch {
     driver.findElement(By.id("accountSearchButton")).click();
     driver.findElement(By.id("accountName")).clear();
     driver.findElement(By.id("accountName")).sendKeys("interfaceer");
-    driver.findElement(By.css("accountSearchButton")).click();
-    driver.findElement(By.css("accountName")).clear();
-    driver.findElement(By.css("accountName")).sendKeys("i");
+    driver.findElement(By.id("accountSearchButton")).click();
+    driver.findElement(By.id("accountName")).clear();
+    driver.findElement(By.id("accountName")).sendKeys("i");
     driver.findElement(By.id("accountSearchButton")).click();
     new Select(driver.findElement(By.id("accountType"))).selectByVisibleText("Customer");
     driver.findElement(By.id("accountSearchButton")).click();
