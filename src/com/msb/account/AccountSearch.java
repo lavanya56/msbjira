@@ -1,4 +1,4 @@
-package com.msb.account;
+package com.msb.account123;
 
 import java.io.PrintWriter;
 import java.io.StringWriter;
@@ -17,7 +17,7 @@ import com.msb.util.GenerateData;
 import com.msb.util.MSBUtils;
 import com.msb.util.ReportBean;
 
-public class AccountSearch123 {
+public class AccountSearch {
   private WebDriver driver;
   private String baseUrl;
   private boolean acceptNextAlert = true;
