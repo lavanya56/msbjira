@@ -17,7 +17,7 @@ import com.msb.util.GenerateData;
 import com.msb.util.MSBUtils;
 import com.msb.util.ReportBean;
 
-public class AccountSearch {
+public class AccountSearch123 {
   private WebDriver driver;
   private String baseUrl;
   private boolean acceptNextAlert = true;
@@ -32,7 +32,8 @@ public class AccountSearch {
 		String timetoProcess = "";
 		String page = "Search Account";
 		String ruleId = "searchAccount";
-		
+		String userName = "Admin";
+		String password = "";
 		String event_id = "";
 		ReportBean repbean = new ReportBean();
 		Date beging = new Date();
